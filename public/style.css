@@ -1,0 +1,172 @@
+@font-face{
+    font-family: handwritten;
+    src: url(./fonts/SueEllenFrancisco-Regular.ttf);
+}
+@font-face{
+    font-family: Roboto;
+    src: url(./fonts/Roboto-Light.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:#675134;
+}
+body{
+    background-color: #fff8cd;
+    padding:20px;
+    width: 90vw;
+    margin: auto;
+}
+.ui-image{
+    position: fixed;
+    transform: scaleX(-1);
+    z-index: -1;
+    opacity: 0.3;
+    height:50vh;
+    bottom:-15vh;
+    right: -5vw;
+    overflow: hidden;
+}
+header{
+    height: 15vh;
+    padding: 10px 0px;
+    border-bottom: 3px solid #675134;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    position: relative;
+    height: 100%;
+    font-family: "handwritten",sans-serif;
+    min-width: 290px;
+}
+.logo img{
+    position: absolute;
+    top:0;
+    height: 87px;
+    padding: 5px;
+}
+.logo .main-text{
+    position: absolute;
+    top:-5px;
+    left:80px;
+    font-size: 37px;
+    font-family: inherit;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.logo .sub-text{
+    position: absolute;
+    top:50px;
+    left:80px;
+    font-size: 20px;
+    font-family: inherit;
+}
+nav{
+    position: relative;
+    bottom:-10px;
+    min-width: 230px;
+    margin-right: 50px;
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    align-items: flex-end;
+}
+nav ul li{
+    display: inline;
+    text-transform: uppercase;
+    font-family: "handwritten";
+    font-size: 25px;
+}
+main{
+    padding: 20px;
+}
+main .title{
+    font-family: "handwritten";
+    text-transform: uppercase;
+    font-size: 35px;
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+.blogs{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:30px;
+}
+.blog{
+    background-color: #ffe15dce;
+    padding: 20px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.blog:nth-child(2){
+    background-color: #ff9742ce;
+}
+.blog .blog-title{
+    font-family: "handwritten";
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.blog .blog-body{
+    font-size: 23px;
+    padding: 10px;
+    font-family: "Roboto";
+    line-height: 35px;
+    overflow: hidden;
+}
+.blog .read-more-btn{
+    font-family: handwritten;
+    font-size: 35px;
+    align-self:flex-end;
+    flex-grow:1;
+    text-align: end;
+}
+.add-blog-form{
+    background-color: #ffe15dce;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+}
+.add-blog-form label{
+    font-size: 30px;
+    font-family: "handwritten";
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+.add-blog-form input{
+    border: none;
+    background-color: #fff8cd;
+    height: 55px;
+}
+.add-blog-form input:nth-of-type(2){
+    height: 180px;
+}
+.add-blog-form .submit-btn{
+    width: 150px;
+    margin-top: 15px;
+    font-family: "handwritten";
+    background-color: #ff9742ce;
+    font-size: 28px;
+}
+.about-paragraph{
+    font-family: Roboto;
+    font-size: 25px;
+
+}
+footer{
+    width: 100%;
+    text-align: center;
+}
