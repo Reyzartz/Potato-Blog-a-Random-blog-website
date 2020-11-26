@@ -104,6 +104,8 @@ main .title{
     grid-gap:30px;
 }
 .blog{
+    max-width: 100%;
+    word-wrap: break-word;
     background-color: #ffe15dce;
     padding: 20px;
     height: 350px;
@@ -123,6 +125,7 @@ main .title{
     padding: 10px;
     font-family: "Roboto";
     line-height: 35px;
+    word-break: break-all;
     overflow: hidden;
 }
 .blog .read-more-btn{
@@ -146,12 +149,12 @@ main .title{
     text-transform: uppercase;
     padding-left: 10px;
 }
-.add-blog-form input{
+.add-blog-form input,.add-blog-form textarea{
     border: none;
     background-color: #fff8cd;
     height: 55px;
 }
-.add-blog-form input:nth-of-type(2){
+.add-blog-form textarea{
     height: 180px;
 }
 .add-blog-form .submit-btn{
@@ -164,7 +167,6 @@ main .title{
 .about-paragraph{
     font-family: Roboto;
     font-size: 25px;
-
 }
 footer{
     width: 100%;

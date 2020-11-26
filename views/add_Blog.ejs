@@ -1,0 +1,20 @@
+<html lang="en">
+    <%- include("./partials/head.ejs")%>
+
+<body>
+    <img src="/images/logo_img.png" alt="j"class="ui-image"/>
+    <header>
+        <%- include("./partials/header.ejs")%>
+    </header>
+    <main>
+        <form action="/blogs" method="POST" class="add-blog-form">
+            <label for="blog-tile">Blog title</label>
+            <input type="text" name="title" id="blog-title" required>
+            <label for="blog-body">blog body</label>
+            <textarea name="body"></textarea>
+            <input type="submit" value="ADD BLOG" class="submit-btn">
+        </form>
+    </main>
+    <%- include("./partials/footer.ejs")%>
+</body>
+</html>

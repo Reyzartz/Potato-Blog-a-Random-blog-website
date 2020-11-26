@@ -1,0 +1,23 @@
+<html lang="en">
+    <%- include("./partials/head.ejs")%>
+
+<body>
+    <img src="./images/logo_img.png" class="ui-image">
+    <header>
+        <%- include("./partials/header.ejs")%>
+    </header>
+    <main>
+            <article class="blog">
+                <div class="blog-title">
+                    <%= blog.title%>-
+                </div>
+                <pre class="blog-body">
+                    <%= blog.body%>
+                </pre>
+            </article>
+        
+    </main>
+    <%- include("./partials/footer.ejs")%>
+
+</body>
+</html>

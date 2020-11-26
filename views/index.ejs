@@ -1,0 +1,32 @@
+<html lang="en">
+    <%- include("./partials/head.ejs")%>
+
+<body>
+    <img src="./images/logo_img.png" class="ui-image">
+    <header>
+        <%- include("./partials/header.ejs")%>
+    </header>
+    <main>
+        <div class="title">
+            <%=title%>
+        </div>
+        <div class="blogs">
+            <% blogs.forEach(blog=>{%>
+                <article class="blog">
+                    <div class="blog-title">
+                        <%=blog.title%> -
+                    </div>
+                    <div class="blog-body">
+                        <%=blog.body%>
+                    </div>
+                    <a href=<%=`/blogs/${blog._id}`%> class="read-more-btn">
+                        read more >
+                    </a>
+                </article>
+            <%})%>
+        </div>
+        
+    </main>
+    <%- include("./partials/footer.ejs")%>
+</body>
+</html>
