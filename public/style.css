@@ -105,12 +105,10 @@ main .title{
 }
 .blog{
     max-width: 100%;
-    word-wrap: break-word;
     background-color: #ffe15dce;
     padding: 20px;
     height: 350px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
 }
 .blog:nth-child(2){
     background-color: #ff9742ce;
@@ -121,11 +119,13 @@ main .title{
     text-transform: uppercase;
 }
 .blog .blog-body{
+    max-width: 100%;
     font-size: 23px;
     padding: 10px;
     font-family: "Roboto";
     line-height: 35px;
     word-break: break-all;
+    word-wrap: break-word;
     overflow: hidden;
 }
 .blog .read-more-btn{
@@ -171,4 +171,9 @@ main .title{
 footer{
     width: 100%;
     text-align: center;
+}
+footer img{
+    height: 40px;
+    margin: 15px 5px;
+    filter: invert(32%) sepia(42%) saturate(437%) hue-rotate(355deg) brightness(90%) contrast(90%);
 }

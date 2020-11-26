@@ -23,7 +23,6 @@ const blogCreatePost = (req,res)=>{
 const blogDetails = (req,res)=>{
     Blog.findById(req.params.id)
     .then((result)=>{
-        console.log(result);
         res.render('single-blog',{blog:result})
     })
     .catch((err)=>{
